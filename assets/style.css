@@ -1,3 +1,131 @@
-body{
-    background-color: red;
+body {
+  margin: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#page {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-areas:
+    "head"
+    "nav"
+    "main"
+    "foot";
+  grid-template-rows: 10px auto 1fr 30px;
+  grid-template-columns: 1fr;
+}
+
+#page > header {
+  grid-area: head;
+  background-color: #8ca0ff;
+  height: auto;
+}
+.frase {
+  display: none;
+}
+#page > nav {
+  grid-area: nav;
+  background-color: #ffa08c;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-left: -5%;
+}
+
+#page > main {
+  grid-area: main;
+  background-color: #ffff64;
+}
+
+#page > footer {
+  grid-area: foot;
+  background-color: #8cffa0;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  #page {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas:
+      "head head"
+      "nav  main"
+      "nav  foot";
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-columns: 150px 1fr;
+  }
+
+  #page > header {
+    grid-area: head;
+    background-color: #8ca0ff;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    padding-right: 5%;
+  }
+  .frase{
+    display: flex;
+  }
+  #page > nav {
+    grid-area: nav;
+    background-color: #ffa08c;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    padding-left: 5%;
+    padding-top: 5%;
+    justify-content: flex-start;
+  }
+  nav > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: -5%;
+  }
+
+  #page > main {
+    grid-area: main;
+    background-color: #ffff64;
+  }
+
+  #page > footer {
+    grid-area: foot;
+    background-color: #8cffa0;
+  }
 }
