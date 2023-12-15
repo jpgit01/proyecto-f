@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Red+Hat+Display&display=swap");
+
 body {
   margin: 0;
 }
+
 p,
 h1,
 h2,
@@ -12,9 +14,11 @@ h6 {
   margin: 0;
   font-family: "Red Hat Display", sans-serif;
 }
+
 .text-logo {
   font-family: "Oleo Script", sans-serif;
 }
+
 .bg-negro {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
@@ -23,15 +27,18 @@ h6 {
   transform: rotate(0deg);
   transition: 0.3s;
 }
+
 .bg-negro:hover {
   transform: rotate(-5deg);
 }
+
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
+
 #page {
   display: grid;
   width: 100%;
@@ -45,16 +52,18 @@ h6 {
   grid-template-columns: 1fr;
 }
 
-#page > header {
+#page>header {
   grid-area: head;
   background-color: rgba(9, 9, 121, 1);
   color: white;
   height: auto;
 }
+
 .frase {
   display: none;
 }
-#page > nav {
+
+#page>nav {
   grid-area: nav;
   background-color: rgba(9, 9, 121, 1);
   color: white;
@@ -62,7 +71,8 @@ h6 {
   align-items: center;
   justify-content: space-around;
 }
-nav > ul {
+
+nav>ul {
   display: flex;
   flex-direction: row;
   gap: 2rem;
@@ -70,9 +80,10 @@ nav > ul {
   align-items: center;
   list-style: none;
   margin-left: -5%;
+  text-align: center;
 }
 
-#page > main {
+#page>main {
   grid-area: main;
   background-color: rgba(9, 9, 121, 1);
   display: flex;
@@ -81,6 +92,7 @@ nav > ul {
   margin: 0;
   padding: 0;
 }
+
 .norte {
   display: flex;
   flex-direction: column;
@@ -89,11 +101,11 @@ nav > ul {
   background-position-y: 40%;
   background-repeat: no-repeat;
   width: 100%;
-  height: auto;
   padding: 5%;
   filter: grayscale(100%);
   transition: 1s;
 }
+
 .centro {
   display: flex;
   flex-direction: column;
@@ -102,11 +114,11 @@ nav > ul {
   background-position-y: 30%;
   background-repeat: no-repeat;
   width: 100%;
-  height: auto;
   padding: 5%;
   filter: grayscale(100%);
   transition: 0.5s;
 }
+
 .sur {
   display: flex;
   flex-direction: column;
@@ -115,16 +127,16 @@ nav > ul {
   background-position-y: 50%;
   background-repeat: no-repeat;
   width: 100%;
-  height: auto;
   padding: 5%;
   filter: grayscale(100%);
   transition: 0.5s;
 }
 
-main > article:hover {
+main>article:hover {
   filter: grayscale(0%);
 }
-#page > footer {
+
+#page>footer {
   grid-area: foot;
   background-color: rgba(9, 9, 121, 1);
   text-align: center;
@@ -134,13 +146,13 @@ main > article:hover {
   align-items: center;
   padding: 2%;
 }
-.redes{
+
+.redes {
   display: flex;
   gap: 20px;
 }
 
-@media (min-width: 768px) {
-}
+@media (min-width: 768px) {}
 
 
 
@@ -171,7 +183,8 @@ main > article:hover {
     padding: 2%;
     width: 20%;
   }
-  #page > header {
+
+  #page>header {
     grid-area: head;
     background-color: rgba(9, 9, 121, 1);
     color: white;
@@ -180,10 +193,12 @@ main > article:hover {
     align-items: center;
     padding-right: 5%;
   }
+
   .frase {
     display: flex;
   }
-  #page > nav {
+
+  #page>nav {
     grid-area: nav;
     background-color: rgba(9, 9, 121, 1);
     display: flex;
@@ -196,7 +211,8 @@ main > article:hover {
     justify-content: flex-start;
     color: white;
   }
-  nav > ul {
+
+  nav>ul {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -212,17 +228,36 @@ main > article:hover {
     overflow-y: auto;
   }
 
-  #page > footer {
+  .norte {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+
+  .centro {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+
+  .sur {
+    background-size: cover;
+    width: 100%;
+    height: auto
+  }
+
+  #page>footer {
     grid-area: foot;
     background-color: rgba(9, 9, 121, 1);
     text-align: center;
     color: white;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding: 2%;
   }
-  .redes{
+
+  .redes {
     display: flex;
     gap: 20px;
   }
