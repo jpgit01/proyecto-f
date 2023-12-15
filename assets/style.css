@@ -30,6 +30,8 @@ h6 {
 
 .bg-negro:hover {
   transform: rotate(-5deg);
+  color: rgb(255, 255, 200);
+  font-weight: bolder;
 }
 
 .logo {
@@ -82,7 +84,14 @@ nav>ul {
   margin-left: -5%;
   text-align: center;
 }
-
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: peru;
+  font-weight: bolder;
+}
 #page>main {
   grid-area: main;
   background-color: rgba(9, 9, 121, 1);
@@ -149,7 +158,12 @@ main>article:hover {
 
 .redes {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
+}
+a > object{
+  width: 30px;
 }
 
 @media (min-width: 768px) {}
